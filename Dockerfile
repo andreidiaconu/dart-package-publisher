@@ -6,7 +6,7 @@ RUN apt-get update && \
 	apt-get clean
   
 # Installing Flutter
-RUN git clone -b stable --depth 1 https://github.com/flutter/flutter.git /flutter
+RUN git clone -b master --depth 1 https://github.com/flutter/flutter.git /flutter
 
 ENV PATH $PATH:/flutter/bin
 
